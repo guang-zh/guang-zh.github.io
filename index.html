@@ -1,0 +1,58 @@
+<!-- guang-zh.github.io Github Projects Website for guang-zh -->
+
+
+<!DOCTYPE html>
+<html lang="en-CA">
+    <!--name: Guang ZHang-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Github repo project website">
+    <meta name="keywords" content="github repo website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guang">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mystyles.css' %}">
+    <title>
+        Github Web Guang
+    </title>
+</head>
+<body>
+    <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="main_urls" href="#" title="Home">Home</a></li>
+          <li><a class="main_urls" href="#" title="List Projects">List Tasks</a></li>
+          <li><a class="main_urls" href="#" title="List Teams">List Responsibles</a></li>
+          <li><a class="main_urls" href="#" title="Contact">Contact</a></li>
+          <li><a class="main_urls" href="#" title="About">About</a></li>
+
+        </ul>
+      </nav>
+        <div class="search">
+            <input type="search" placeholder="enter text to search ..."/>
+        </div>
+    </header>
+      {% if projects %}
+        {% for p in projects %}
+        <div class="projects-{{ p.tags}}">{{ p }}</div>
+        {% endfor %}
+      {% endif %}
+
+      {% if teams %}
+        {% for t in teams %}
+        <div class="teams-{{ t.tags}}">{{ t }}</div>
+        {% endfor %}
+      {% endif %}
+
+      {% block content %}
+
+      {% endblock %}
+
+    <footer>
+      <p>&copy; Copyright 2021 @<a class="main_urls" href="https://github.com/guang-zh">Guang</a></p>
+
+    </footer>
+    </body>
+
+</html>
