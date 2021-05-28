@@ -1,0 +1,98 @@
+/** CSS Styles for the html files
+Guang Zhang 1942372 **/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap');
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight : bold;
+  min-width:1000px;
+}
+.content {
+  flex: 1 0 auto;
+  margin-top: 10px;
+}
+footer {
+    bottom: 0;
+    flex-shrink: 0;
+    background-color:#131921;
+    display : flex;
+    justify-content :  space-between;
+    align-items : center;
+    width : 100%;
+    color : white;
+    font-weight : bold;
+}
+
+header{
+    background-color:#131921;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+ul {
+list-style: none;
+}
+
+li,span{
+    display: inline-block;
+    padding : 0px 20px;
+    margin: 2px;
+}
+
+
+.main_urls{
+ text-decoration: none;
+ padding: 0.2em;
+ border-bottom: 1px solid #ff4000;
+ color:White;
+
+}
+a:hover{
+    color:#ff4000;
+}
+
+div a {
+    text-decoration: none;
+}
+
+
+
+.horizontal-container{
+    display: flex;
+    align-items: center ;
+    vertical-align:middle;
+    justify-content: space-between;
+    border-bottom: 1px solid blue;
+    width: 100%;
+    margin:20px 0px;
+}
+.vertical-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.align-vertical{
+    padding:0;
+    margin: 0;
+    vertical-align:middle;
+    width: 100%;
+}
+
+#id_description{max-width:300px; max-height:20px;}
+
+.form-container{width:40%; margin:auto;display:flex; flex-direction: column;align-items: center;}
+.form-content{display:flex; flex-direction: column; align-items: center; justify-content: space-evenly; }
+.helptext ul {display:flex; flex-direction: column;}
+.helptext {color:red; display:flex; flex-direction: column;align-items: center;}
+.form-container form {display:flex; flex-direction: column;align-items: center;}
+.btn-post button{ background-color:  #87CEFA ; border: 1px solid green; border-radius: 0.2em; }
+ nav .greet_user { color:white;}
+.pages-content {margin:auto;display:flex;align-items: center;}
+.projects-heading{display: flex;align-items: center;justify-content: space-between;}
