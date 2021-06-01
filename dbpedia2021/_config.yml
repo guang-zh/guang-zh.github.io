@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   https://github.com/dbpedia/healthcare-platform
   Repository for the GSoC 2021 project 'Update DBpedia SPARQL for 
   Wiki Resources Related to Pandemic, Healthcare, and Health AI Fields'.
-baseurl: "/dbpedia2021" # the subpath of your site, e.g. /blog
-url: "https://guang-zh.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "guang-zh.github.io" # the subpath of your site, e.g. /blog
+url: "https://guang-zh.github.io/dbpedia2021" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  guang-zh
 github: [metadata]
